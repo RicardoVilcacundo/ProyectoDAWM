@@ -1811,27 +1811,4 @@ section {
     padding: 2px 0;
   }
 }
-#nombreA{
-   text-align:center;
-}
-#imgA{
-  margin:10px auto;
-  display:block;
-}
-#descripcionA{
-  text-align: justify;
-}
-#imgN{
-   position: relative;
-   width:100%;
-  height:220px;
-}
-#textoN{
-  position: absolute;
-  top: 60%;
-  left: 18%;
-  font-size: 55px;
-}
-.section-titleA{
-  position: relative;
-}
+
