@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 let cargarJson = () => {
 
-  fetch('https://raw.githubusercontent.com/RicardoVilcacundo/ProyectoDAWM/main/BizLand/assets/json/negociacion.json')
+  fetch('https://raw.githubusercontent.com/RicardoVilcacundo/ProyectoDAWM/main/BizLand/assets/json/negociaciones.json')
   .then( (resultado) => {
     return resultado.json();
   })
@@ -56,7 +56,7 @@ let cargarJson = () => {
 	segundoDivInterno.setAttribute('data-aos-delay', '100');
 	
 	//Creacion de imagen
-	let dinformacion = document.createElement("p"),
+	let dinformacion = document.createElement("p");
 	dinformacion.setAttribute('class', 'font-italic');
 	dinformacion.textContent = data.negociacion[1].informacion;
 	
