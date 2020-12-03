@@ -1818,4 +1818,12 @@ section {
     padding: 2px 0;
   }
 }
-
+.contAudi .section-title p{
+	font-weight: 10;
+	width: 100%;
+	text-align: justify;
+	font-size: 20px;
+}
+.section-lista ul{
+  	margin-bottom: 3rem;
+}
