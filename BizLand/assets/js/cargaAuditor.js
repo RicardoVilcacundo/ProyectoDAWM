@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
+    cargarJson();
+})
 
 let cargarJson = () => {
 
@@ -6,17 +9,17 @@ let cargarJson = () => {
     return resultado.json();
   })
   .then( (data) => {
-  
+    console.log(data);
     let stitle = document.createElement("div");
-    stittle.setAttribute('class', 'section-title')
+    stitle.setAttribute('class', 'section-title')
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
     Tspan.textContent = "Auditoria Externa";
-    tittle.appendChild(Tspan)
+    title.appendChild(Tspan)
     for ( texto of data.auditoria.externa.descripcion){
     		let Tp= document.createElement("p");   
     		Tp.textContent = texto.textContent;
-    		tittle.appendChild(Tp)
+    		title.appendChild(Tp)
     }
     stitle.appendChild(title)   
 
@@ -32,20 +35,20 @@ let cargarJson = () => {
     		li.textContent = texto2.textContent;
     		ul.appendChild(li)
     }
-    clista.appendChild(cTitle)
-    clista.appendchild(ul) 
+    clista.appendChild(ctitle)
+    clista.appendChild(ul) 
     
     
     let stitle2 = document.createElement("div");
-    stittle2.setAttribute('class', 'section-title')
+    stitle2.setAttribute('class', 'section-title')
     let title2 = document.createElement("h3");
     let Tspan2 = document.createElement("span");
     Tspan2.textContent = "Auditoria Interna";
-    tittle2.appendChild(Tspan2)
+    title2.appendChild(Tspan2)
     for ( texto of data.auditoria.interna.descripcion){
     		let Tp= document.createElement("p");   
     		Tp.textContent = texto.textContent;
-    		tittle.appendChild(Tp)
+    		title.appendChild(Tp)
     }
     stitle2.appendChild(title2)   
 
@@ -61,26 +64,20 @@ let cargarJson = () => {
     		li.textContent = texto2.textContent;
     		ul2.appendChild(li)
     }
-    clista2.appendChild(cTitle2)
-    clista2.appendchild(ul2) 
+    clista2.appendChild(ctitle2)
+    clista2.appendChild(ul2) 
 
-   let contendor = document.getElemntsByClassName("contAudi")[0];
-   contenedor.appendchild(stittle);
-   contenedor.appendchild(clista);
-   contenedor.appendchild(stittle2);
-   contenedor.appendchild(clista2);
+   let contenedor = document.getElementsByClassName("contAudi")[0];
+   contenedor.appendChild(stitle);
+   contenedor.appendChild(clista);
+   contenedor.appendChild(stitle2);
+   contenedor.appendChild(clista2);
      
    })
   .catch( (error) => {
-
     console.log("Error ",error)
 
   })
 }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-	cargarJson();
-})
 
 
