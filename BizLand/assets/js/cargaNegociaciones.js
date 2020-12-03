@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    cargarJson();
-})
 
 let cargarJson = () => {
 
@@ -11,7 +8,7 @@ let cargarJson = () => {
   .then( (data) => {
 	  
 	//En esta parte de la pagina se cargará todo lo que va a continuacion
-    let contenedor = document.getElementsByClassName("negociaciones")[0];
+    let contenedor = document.getElementsByClassName("container")[2];
 	
 	//-------------------Se llena el primer div, el cual tendrá titulo, subtitulo, y unos parrafos-----------------
 	let primerDiv = document.createElement("div");
@@ -101,3 +98,7 @@ let cargarJson = () => {
 
   })
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    cargarJson();
+})
