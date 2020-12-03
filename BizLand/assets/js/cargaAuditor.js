@@ -9,7 +9,6 @@ let cargarJson = () => {
     return resultado.json();
   })
   .then( (data) => {
-    console.log(data);
     let stitle = document.createElement("div");
     stitle.setAttribute('class', 'section-title')
     let title = document.createElement("h3");
@@ -18,7 +17,7 @@ let cargarJson = () => {
     title.appendChild(Tspan)
     for ( texto of data.auditoria.externa.descripcion){
     		let Tp= document.createElement("p");   
-    		Tp.textContent = texto.textContent;
+    		Tp.textContent = texto;
     		title.appendChild(Tp)
     }
     stitle.appendChild(title)   
@@ -32,7 +31,7 @@ let cargarJson = () => {
     let ul = document.createElement("ul");
     for ( texto2 of data.auditoria.externa.objetivos){
     	     let li = document.createElement("li");  
-    		li.textContent = texto2.textContent;
+    		li.textContent = texto2;
     		ul.appendChild(li)
     }
     clista.appendChild(ctitle)
@@ -47,8 +46,8 @@ let cargarJson = () => {
     title2.appendChild(Tspan2)
     for ( texto of data.auditoria.interna.descripcion){
     		let Tp= document.createElement("p");   
-    		Tp.textContent = texto.textContent;
-    		title.appendChild(Tp)
+    		Tp.textContent = texto;
+    		title2.appendChild(Tp)
     }
     stitle2.appendChild(title2)   
 
@@ -61,7 +60,7 @@ let cargarJson = () => {
     let ul2 = document.createElement("ul");
     for ( texto2 of data.auditoria.interna.objetivos){
     	     let li = document.createElement("li");  
-    		li.textContent = texto2.textContent;
+    		li.textContent = texto2;
     		ul2.appendChild(li)
     }
     clista2.appendChild(ctitle2)
@@ -79,5 +78,6 @@ let cargarJson = () => {
 
   })
 }
+
 
 
