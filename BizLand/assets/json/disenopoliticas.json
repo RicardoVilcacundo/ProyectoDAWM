@@ -1,0 +1,20 @@
+{
+  "politicas": {
+    "generales": [
+      "Marcan y definen las líneas generales de la empresa, son políticas que involucran a toda la  organización.  Deben ser conocidas por todos los trabajadores que integran el recurso humano de la compañía y servirles de guía."
+    ],
+    "departamentales": {
+      "definicion": [
+        "Incluye los principios a seguir por cada departamento o servicio."
+      ],
+      "tipos": [
+        "Politica de Calidad",
+        "Politica Medioambiental",
+        "Politica de Prevencion de Riesgos"
+      ]
+    },
+    "especificas": [
+      "Fija los principios para actividades y proyectos concretos, pautadas a medida de dicho proyecto y suelen ser temporales."
+    ]
+  }
+}
