@@ -10,31 +10,16 @@ let cargarJson = () => {
   })
 .then((data)=>{
     
-
-
     let stitle = document.createElement("div");
     stitle.setAttribute('class', 'section-title')
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
-    Tspan.textContent = "Consultoria";
+    Tspan.textContent = "Financiera";
     title.appendChild(Tspan)
-    for ( texto of data.consultoria.descripcionG.texto){
+    for ( texto of data.consultoria.financiera.descripcion){
         let Tp= document.createElement("p");   
         Tp.textContent = texto;
         title.appendChild(Tp)
-    }
-    stitle.appendChild(title)
-
-    let stitle1 = document.createElement("div");
-    stitle1.setAttribute('class', 'section-title')
-    let title1 = document.createElement("h3");
-    let Tspan1 = document.createElement("span");
-    Tspan.textContent = "Financiera";
-    title1.appendChild(Tspan1)
-    for ( texto1 of data.consultoria.financiera.descripcion){
-        let Tp= document.createElement("p");   
-        Tp.textContent = texto1;
-        title1.appendChild(Tp)
     }
     stitle.appendChild(title)    
 
