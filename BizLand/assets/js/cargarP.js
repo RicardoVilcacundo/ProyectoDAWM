@@ -9,6 +9,9 @@ let cargarJson = () => {
     return resultado.json();
   })
 .then((data)=>{
+    
+
+
     let stitle = document.createElement("div");
     stitle.setAttribute('class', 'section-title')
     let title = document.createElement("h3");

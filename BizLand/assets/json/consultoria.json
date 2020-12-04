@@ -1,11 +1,6 @@
 {
     "consultoria": {
-        "descripcionG":{
-            "texto": [
-                  "Nuestra función es asesorar, ofrecer apoyo, orientación y respaldo a otras empresas o personas sobre determinados aspectos. Ayudamos a mejorar tus resultados con expertos que investiguen y analicen todas las áreas posibles de mejora o bien porque tienes claro que es lo que necesitas y no sabes cómo conseguirlo."  
-            ]
-
-        },
+        
        "financiera": {
             "descripcion": [
                 "Evalúamos las finanzas de la empresa y señalamos estrategias para hacerlas más organizadas."

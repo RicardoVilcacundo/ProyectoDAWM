@@ -1824,6 +1824,12 @@ section {
 	text-align: justify;
 	font-size: 20px;
 }
+.consult .section-title p{
+	font-weight: 10;
+	width: 100%;
+	text-align: justify;
+	font-size: 20px;
+}
 .section-lista ul{
   	margin-bottom: 3rem;
 }
