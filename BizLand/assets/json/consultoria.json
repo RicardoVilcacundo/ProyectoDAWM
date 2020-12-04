@@ -1,20 +1,26 @@
 {
     "consultoria": {
+        "descripcionG":{
+            "texto": [
+                  "Nuestra función es asesorar, ofrecer apoyo, orientación y respaldo a otras empresas o personas sobre determinados aspectos. Ayudamos a mejorar tus resultados con expertos que investiguen y analicen todas las áreas posibles de mejora o bien porque tienes claro que es lo que necesitas y no sabes cómo conseguirlo."  
+            ]
+
+        },
        "financiera": {
             "descripcion": [
                 "Evalúamos las finanzas de la empresa y señalamos estrategias para hacerlas más organizadas."
             ]
         },
-    	"tributaria": {
+        "tributaria": {
             "descripcion": [
                 "Verificamos el cumplimiento de las obligaciones tributarias de la compañía y determinamos si existen errores u omisiones en el cálculo de los impuestos, que pudieran ser observados y sancionadas por la Administración Tributaria (SRI)."
             ]    
-    	},
-    	"laboral": {
+        },
+        "laboral": {
             "descripcion": [
-				"diseñamos e implementamos políticas y sistemas de relaciones laborales acordes con la estrategia de la empresa, asesoramos en la gestión de las relaciones laborales y en la negociación colectiva"            
-			]	
-					
-		}
-	}
+                "diseñamos e implementamos políticas y sistemas de relaciones laborales acordes con la estrategia de la empresa, asesoramos en la gestión de las relaciones laborales y en la negociación colectiva"            
+            ]   
+                    
+        }
+    }
 }
