@@ -1,0 +1,33 @@
+{
+    "auditoria": {
+        "externa": {
+            "descripcion": [
+                "La auditoría externa es un sistema utilizado por las organizaciones para realizar un examen detallado, sistemático y crítico mediante un agente externo, ya sea una empresa ajena a la organización, un auditor especializado o un contador público.",
+                "La función de este auditor, el cual no debe poseer un vínculo estrecho con la empresa, consiste en determinar y ofrecer una opinión acerca del sistema de información de la empresa y proponer asimismo cómo mejorar algunas técnicas.",
+                "En definitiva, la auditoría externa analiza en detalle el sistema de información de una empresa, ya sean sus documentos, programas, expedientes y estados financieros, para otorgarles fiabilidad y validez."
+            ],
+             "objetivos": [
+                "Investigar y determinar si la forma en que se emplea el sistema informático de la empresa es válida, verídica y correcta.",
+	        "Verificar si existen posibles problemas a los cuales se enfrentará la empresa.",
+	        "Resaltar los puntos fuertes y débiles de determinada toma de decisiones.",
+                "Proponer sugerencias constructivas.",
+		"Controlar las actividades relativas al desarrollo de la empresa.",
+		"Ayudar a que la empresa tome decisiones exitosas y confiables."
+            ]
+        },
+		"interna": {
+            "descripcion": [
+                "La auditoría interna es una actividad que se utiliza en las organizaciones para supervisar, dirigir, controlar y mejorar de manera integral las operaciones.",
+                "Esta actividad se realiza de forma específica y objetiva, con un grupo de personas llamadas «auditores».",
+                "Para que la auditoría interna pueda cumplir y ejecutar exitosamente sus objetivos, debe ser capaz de influir sobre los aspectos administrativos, organizacionales y estadísticos de la organización."
+            ],
+             "objetivos": [
+                "Ayudar a que la organización dirija de forma exitosa los planes, riesgos y responsabilidades.",
+	        "Verificar que los asuntos contables sean confiables y estables.",
+	        "Vigilar y evaluar el funcionamiento interno y operativo.",
+                "Preservar y salvaguardar los bienes acumulados.",
+		"Detectar posibles problemas financieros y operativos para desarrollar su solución."
+            ]
+        }
+    }
+}
