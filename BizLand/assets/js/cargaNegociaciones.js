@@ -41,7 +41,7 @@ let cargarJson = () => {
 	primerDivInterno.setAttribute('data-aos', 'zoom-out');
 	primerDivInterno.setAttribute('data-aos-delay', '100');
 	let dimagen = document.createElement("img");
-	dimagen.setAttribute('src', 'assets/img/imagenauditor.jpg');
+	dimagen.setAttribute('src', 'assets/img/negociacion.jpg');
 	dimagen.setAttribute('class', 'img-fluid');
 	dimagen.setAttribute('alt', '');
 	primerDivInterno.appendChild(dimagen);
