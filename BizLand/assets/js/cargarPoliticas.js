@@ -9,6 +9,7 @@ let cargarJson = () => {
     return resultado.json();
   })
   .then( (data) => {
+    console.log(data);
     let sectiontitle = document.createElement('div');
     sectiontitle.setAttribute('class', 'section-title');
     let title = document.createElement("h3");
@@ -28,7 +29,7 @@ let cargarJson = () => {
     titledep.appendChild(Tspandep);
     let pdef = document.createElement('p');
     pdef.textContent = data.politicas.departamentales.definicion;
-    let listtitle = document.createElement('h4');
+    let listtitle = document.createElement('h3');
     listtitle.textContent = "Tipos";
     let ul = document.createElement('ul');
     for(tipo of data.politicas.departamentales.tipos){
@@ -38,8 +39,10 @@ let cargarJson = () => {
     }
     sectiondepartamentales.appendChild(titledep);
     sectiondepartamentales.appendChild(pdef);
-    sectiondepartamentales.appendChild(listtitle);
-    sectiondepartamentales.appendChild(ul);
+    let seccionlista = document.createElement('div');
+    seccionlista.setAttribute('class', 'section-lista')
+    seccionlista.appendChild(listtitle);
+    seccionlista.appendChild(ul);
 
 
     let sectionespec = document.createElement('div');
@@ -53,9 +56,10 @@ let cargarJson = () => {
     titleespec.appendChild(pespec);
     sectionespec.appendChild(titleespec);
 
-    let contenedor = document.getElementByClassName("contAudi")[0];
+    let contenedor = document.getElementsByClassName("contAudi")[0];
     contenedor.appendChild(sectiontitle);
     contenedor.appendChild(sectiondepartamentales);
+    contenedor.appendChild(seccionlista);
     contenedor.appendChild(sectionespec);
 
 
