@@ -1,0 +1,31 @@
+{
+"especial":[
+	{
+	"titulo":"Procedimientos Convenidos",
+	"subtitulo":"Procedimientos Convenidos",
+	"descripcion1":"Consiste en la realización de procedimientos específicos de auditoría previamente convenidos con la Gerencia. El objetivo de un trabajo con procedimientos convenidos es que el auditor lleve a cabo procedimientos de una naturaleza de auditoría en lo cual han convenido el auditor, la entidad y cualquier tercera persona apropiada, informando sobre los resultados.",
+	"descripcion2":"Como el auditor simplemente proporciona un informe de los resultados de hechos de los procedimientos convenidos, no se expresa ninguna certeza. En su lugar, los usuarios del informe evalúan por si mismos los procedimientos y resultados informados por el auditor y extraen sus propias conclusiones del trabajo del auditor."
+	},
+	{
+	"informacion":"El auditor deberá llevar a cabo los procedimientos convenidos y usar la evidencia obtenida como la base para el informe de resultados de hechos. El informe de resultados de hechos debería contener:",
+	"lista":[
+		{
+		"superior":"Destinatario",
+		"inferior":"Ordinariamente el cliente que contrató al auditor para realizar los procedimientos convenidos"
+		},
+		{
+		"superior":"Identificación de información especifica financiera o no financiera",
+		"inferior":"A la que se han aplicado los procedimientos convenidos"
+		},
+		{
+		"superior":"Identificación del propósito",
+		"inferior":"Para el que fueron desarrollados los procedimientos convenidos"
+		},
+		{
+		"superior":"Descripción de los resultados de hechos del auditor",
+		"inferior":"Incluyendo suficientes detalles de errores y excepciones encontrados"
+		}
+	]
+	}
+]
+}
