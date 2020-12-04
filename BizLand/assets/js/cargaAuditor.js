@@ -11,6 +11,7 @@ let cargarJson = () => {
   .then( (data) => {
     let stitle = document.createElement("div");
     stitle.setAttribute('class', 'section-title')
+    stitle.setAttribute('id', 'audiE')
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
     Tspan.textContent = "Auditoria Externa";
@@ -40,6 +41,7 @@ let cargarJson = () => {
     
     let stitle2 = document.createElement("div");
     stitle2.setAttribute('class', 'section-title')
+    stitle2.setAttribute('id', 'audiI')
     let title2 = document.createElement("h3");
     let Tspan2 = document.createElement("span");
     Tspan2.textContent = "Auditoria Interna";

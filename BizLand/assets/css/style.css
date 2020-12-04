@@ -1337,11 +1337,18 @@ section {
   bottom: 15px;
 }
 .team .row{
+	display: flex;
+	flex-direction: row;
+	justify-content:left;
 }
 .team .row > div{
   margin-left: 38%;
 }
-
+@media (max-width: 768px) {
+  .team .row > div{
+  	margin-left: 5%;
+	}
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -1818,6 +1825,9 @@ section {
     padding: 2px 0;
   }
 }
+/*--------------------------------------------------------------
+# Inner page
+--------------------------------------------------------------*/
 .contAudi .section-title p{
 	font-weight: 10;
 	width: 100%;
