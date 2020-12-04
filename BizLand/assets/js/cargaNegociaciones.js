@@ -63,7 +63,6 @@ let cargarJson = () => {
 		
 		let dli = document.createElement("li");
 		let di = document.createElement("i");
-		di.setAttribute('class', 'bx bx-images');
 		
 		let miniDiv = document.createElement("div");
 		let dsup = document.createElement("h5");
