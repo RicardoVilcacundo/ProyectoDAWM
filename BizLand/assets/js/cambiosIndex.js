@@ -63,7 +63,15 @@ function ingresarEnlaces() {
 		   
 		enlace.insertAdjacentText('beforeend',opcion.textContent);
 		li.appendChild(enlace);
+	        li.addEventListener("click",ocultar_lista);
      		lista.appendChild(li);
      }    
 }
 
+
+function ocultar_lista() {
+	box_search.style.display = "none";
+	bar_search.style.top = "-50px";
+	cover_ctn_search.style.display = "none";
+	inputSearch.value = "";
+}
