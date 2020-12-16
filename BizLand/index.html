@@ -26,6 +26,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- CSS de intro.js -->
+   <link href="assets/css/introjs.css" rel="stylesheet">
 
   <!-- Script para envio de correos por js -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -65,7 +68,7 @@
       <!--h1 class="logo mr-auto"><a href="index.html">Dino Mendoza - Auditor<span>.</span></a></h1-->
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo mr-auto"><img src="assets/img/Logo/LogoFull.png" alt=""></a>
-
+      <div data-step="1" data-intro="   Menu de navegacion">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Inicio</a></li>
@@ -95,7 +98,8 @@
 
         </ul>
       </nav><!-- .nav-menu -->
-       <div id="ctn-icon-search">
+       </div>
+       <div id="ctn-icon-search" data-position="left" data-step="2" data-intro="   Buscador interno">
       	<i class="fas fa-search" id="icon-search"></i>
       </div>
 
@@ -120,7 +124,8 @@
       </h1>
       <h2>Contador Público Autorizado - Auditor Externo Independiente</h2>
       <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Iniciar</a>
+        <!--<a href="#about" class="btn-get-started scrollto">Iniciar</a>--->
+	 <input type="button" value="Iniciar" id="navegacion">
         <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>-->
       </div>
     </div>
@@ -132,7 +137,7 @@
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
+        <div class="row" data-step="3" data-intro="Servicios destacados" data-position="bottom">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="icofont-look"></i></div>
@@ -174,7 +179,7 @@
     <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title" data-position= "bottom"  data-step="4" data-intro="Seccion nosotros">
           <h2>Nosotros</h2>
           <h3><span>Acerca de Nosotros</span></h3>
           <p>Somos una institucion destinada a la prestacion de servicios de contaduria y auditoria. Contamos con amplia trayectoria profesional en el campo de la Auditoría Financiera en firmas con representación internacional, en el área de Auditoría Interna en importantes grupos económico y empresas privadas del país; así como también en la Superintendencia de Economía Popular y Solidaria SEPS.</p>
@@ -370,7 +375,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" data-position="right"  data-step="5" data-intro="Servicio Auditoria enterna">
             <div class="icon-box">
               <div class="icon"><i class="icofont-investigation"></i></div>
               <h4><a href="Auditoria.html#audiE">Auditoría Externa</a></h4>
@@ -378,7 +383,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" data-position= "right"  data-step="6" data-intro="Servicio Auditoria interna">
             <div class="icon-box">
               <div class="icon"><i class="icofont-look"></i></div>
               <h4><a href="Auditoria.html#audiI">Auditoría Interna</a></h4>
@@ -386,7 +391,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300" data-position= "left"  data-step="7" data-intro="Servicio Consultorias">
             <div class="icon-box">
               <div class="icon"><i class="icofont-info-circle"></i></div>
               <h4><a href="Consultorias.html">Consultorías</a></h4>
@@ -394,7 +399,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100" data-position= "right"  data-step="8" data-intro="Servicio Negociaciones">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="Negociaciones.html">Negociación</a></h4>
@@ -402,7 +407,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200" data-position= "right"  data-step="9" data-intro="Servicio Diseño de Politicas">
             <div class="icon-box">
               <div class="icon"><i class="icofont-law-document"></i></div>
               <h4><a href="DiseñoPoliticas.html">Diseño de políticas</a></h4>
@@ -410,7 +415,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300" data-position= "left"  data-step="10" data-intro="Servicio Trabajos Especiales">
             <div class="icon-box">
               <div class="icon"><i class="icofont-handshake-deal"></i></div>
               <h4><a href="#services">Trabajos especiales</a></h4>
@@ -861,7 +866,7 @@
           <h3><span>Contáctenos</span></h3>
           <p>Ubíquenos a través de nuestra dirección de correo electrónico o llamando a nuestra línea telefónica, puede encontrarnos también en WhatsApp o llenar el formulario con sus datos para poder contactar con usted.</p>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" data-aos="fade-up" data-aos-delay="100" data-step="11" data-intro="Informacion contacto">
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
@@ -890,11 +895,11 @@
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-6 ">
+          <div class="col-lg-6 " data-position= "right" data-step="12" data-intro="Ubicacion en el mapa">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DdKo62ga6VF0WYWsSCSd0Nv8c5tMtZxR" width=100% height="384px" allowfullscreen></iframe>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-position= "left"  data-step="13" data-intro="Formulario de contacto">
           	<!--action="forms/contact.php"-->
             <form action="forms/contact.php" id="formularioContacto" method="post" role="form" class="php-email-form">
               <div class="form-row">
