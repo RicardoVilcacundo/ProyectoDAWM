@@ -8,7 +8,9 @@ bar_search = document.getElementById("ctn-bar-search");
 cover_ctn_search= document.getElementById("cover-ctn-search");
 inputSearch = document.getElementById("inputSearch");
 box_search= document.getElementById("box-search");
+navegacion= document.getElementById("navegacion");
 
+navegacion.addEventListener("click", navegar);
 cover_ctn_search.addEventListener("click", ocultar_buscador);
 
 function mostrar_buscador(){
@@ -75,3 +77,8 @@ function ocultar_lista() {
 	cover_ctn_search.style.display = "none";
 	inputSearch.value = "";
 }
+
+function navegar(){
+	 introJs().start();
+}
+
