@@ -1846,6 +1846,22 @@ section {
 .section-lista ul{
   	margin-bottom: 3rem;
 }
+
+/*--------------------------------------------------------------
+# Iniciar Sesion
+--------------------------------------------------------------*/
+#iniciar_sesion{
+  position: absolute;
+  border-radius: 15px;
+  right: 1%;
+  height: 30%;
+  top:34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #394867;
+}
+
 /*--------------------------------------------------------------
 # Buscador Interno
 --------------------------------------------------------------*/
