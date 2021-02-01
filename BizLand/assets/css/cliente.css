@@ -35,6 +35,6 @@ body{
 	opacity: 1;
 }
 
-#btnChangePicture {
+#btnChangePicture, #btnUpdate, #btnAdd {
 	background-color: #4d94ff;
 }

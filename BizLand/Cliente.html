@@ -148,6 +148,9 @@
 									<li class="nav-item">
                                         <a class="nav-link" id="reviewsEdit-tab" data-toggle="tab" href="#reviewsEdit" role="tab" aria-controls="reviewsEdit" aria-selected="false">Editar reseña</a>
                                     </li>
+									<li class="nav-item">
+                                        <a class="nav-link" id="reviewsAdd-tab" data-toggle="tab" href="#reviewsAdd" role="tab" aria-controls="reviewsAdd" aria-selected="false">Añadir reseña</a>
+                                    </li>
                                 </ul>
                                 <div class="tab-content ml-1" id="myTabContent">
                                     <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
@@ -236,7 +239,7 @@
                                         
 										<div class="row">
 											<div class="col-sm-3 col-md-2 col-5">
-												<label>Elegir reseña: </label>
+												<label style="font-weight:bold;">Elegir reseña: </label>
 											</div>
 											
 											<div class="col-md-8 col-6" id="combobox">
@@ -248,17 +251,51 @@
 											</div>
 										</div>
 										
+										<hr />
+										
 										<div class="row">
 											<div class="col-sm-3 col-md-2 col-5">
-												<label>Escriba el texto actualizado: </label>
+												<label style="font-weight:bold;">Escriba el texto actualizado: </label>
 											</div>
 											
 											<div class="col-md-8 col-6" id="textbox">
-												<input type="text" id="resenatexto" name="resenatexto">
+												<textarea id="resenatexto" name="resenatexto" cols="70">
+												</textarea>
+											</div>
+										</div>
+										
+										<hr />
+										
+										<div class="row">
+											<div class="col-sm-3 col-md-2 col-5">
+												<input type="button" class="btn btn-secondary" id="btnUpdate" value="Actualizar Reseña" />
 											</div>
 										</div>
 										
                                     </div>
+									
+									<div class="tab-pane fade" id="reviewsAdd" role="tabpanel" aria-labelledby="reviewsAdd-tab">
+										
+										<div class="row">
+											<div class="col-sm-3 col-md-2 col-5">
+												<label style="font-weight:bold;">Escriba su nueva reseña: </label>
+											</div>
+											
+											<div class="col-md-8 col-6" id="textbox">
+												<textarea id="resenatexto" name="resenatexto" cols="70">
+												</textarea>
+											</div>
+										</div>
+										
+										<hr />
+										
+										<div class="row">
+											<div class="col-sm-3 col-md-2 col-5">
+												<input type="button" class="btn btn-secondary" id="btnAdd" value="Añadir Reseña" />
+											</div>
+										</div>
+										
+									</div>
                                 </div>
                             </div>
                         </div>
