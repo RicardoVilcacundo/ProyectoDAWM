@@ -24,14 +24,14 @@ $(document).ready(function () {
             $('#profilePicture').on('change', function () {
                 readURL(this);
                 $('#btnChangePicture').addClass('changing');
-                $('#btnChangePicture').attr('value', 'Confirm');
+                $('#btnChangePicture').attr('value', 'Confirmar');
                 $('#btnDiscard').removeClass('d-none');
                 // $('#imgProfile').attr('src', '');
             });
             $('#btnDiscard').on('click', function () {
                 // if ($('#btnDiscard').hasClass('d-none')) {
                 $('#btnChangePicture').removeClass('changing');
-                $('#btnChangePicture').attr('value', 'Change');
+                $('#btnChangePicture').attr('value', 'Cambiar imagen');
                 $('#btnDiscard').addClass('d-none');
                 $('#imgProfile').attr('src', $imgSrc);
                 $('#profilePicture').val('');

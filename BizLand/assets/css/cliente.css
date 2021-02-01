@@ -38,3 +38,7 @@ body{
 #btnChangePicture, #btnUpdate, #btnAdd {
 	background-color: #4d94ff;
 }
+
+p {
+	text-align: justify;
+}
