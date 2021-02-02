@@ -156,6 +156,11 @@ let cargarJson = () => {
 	}
 	formularioR.appendChild(comboboxER);
 	
+	let etiquetaP = document.createElement("label");
+	etiquetaP.setAttribute("class", "col-sm-3 col-md-2 col-5");
+	etiquetaP.textContent = "No olvidar elegir!";
+	formularioR.appendChild(etiquetaP);
+	
 	let etiquetaTA = document.createElement("label");
 	etiquetaTA.setAttribute("class", "col-sm-3 col-md-2 col-5");
 	etiquetaTA.setAttribute("style", "font-weight:bold;");
@@ -168,6 +173,11 @@ let cargarJson = () => {
 	areadetexto.setAttribute("name", "resenaeditada");
 	areadetexto.setAttribute("cols", "70");
 	formularioR.appendChild(areadetexto);
+	
+	let etiquetaPR = document.createElement("label");
+	etiquetaPR.setAttribute("class", "col-sm-3 col-md-2 col-5");
+	etiquetaPR.textContent = "Es posible dejar este vacío";
+	formularioR.appendChild(etiquetaPR);
 	
 	// DE SER ESTRICTAMENTE NECESARIO, ELIMINAR ESTE BLOQUE DE CODIGO Y USAR EL SIGUIENTE!!
 	let botonfinal = document.createElement("input");
