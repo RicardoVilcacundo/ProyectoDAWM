@@ -1,21 +1,18 @@
 {
-    "consultoria": {
-        
-       "financiera": {
-            "descripcion": [
-                "Evalúamos las finanzas de la empresa y señalamos estrategias para hacerlas más organizadas."
-            ]
-        },
-        "tributaria": {
-            "descripcion": [
-                "Verificamos el cumplimiento de las obligaciones tributarias de la compañía y determinamos si existen errores u omisiones en el cálculo de los impuestos, que pudieran ser observados y sancionadas por la Administración Tributaria (SRI)."
-            ]    
-        },
-        "laboral": {
-            "descripcion": [
-                "Diseñamos e implementamos políticas y sistemas de relaciones laborales acordes con la estrategia de la empresa, asesoramos en la gestión de las relaciones laborales y en la negociación colectiva"            
-            ]   
-                    
-        }
-    }
+    "consultoria": [{
+        "titulo": "Financiera",
+        "contenido": [
+            "Evalúamos las finanzas de la empresa y señalamos estrategias para hacerlas más organizadas."
+        ]},
+		{
+        "titulo": "Tributaria",
+        "contenido": [
+            "Verificamos el cumplimiento de las obligaciones tributarias de la compañía y determinamos si existen errores u omisiones en el cálculo de los impuestos, que pudieran ser observados y sancionadas por la Administración Tributaria (SRI)."
+        ]},
+		{
+        "titulo": "Laboral",
+        "contenido": [
+            "Diseñamos e implementamos políticas y sistemas de relaciones laborales acordes con la estrategia de la empresa, asesoramos en la gestión de las relaciones laborales y en la negociación colectiva."            
+        ]}
+    ]
 }

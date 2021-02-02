@@ -14,9 +14,9 @@ let cargarJson = () => {
     stitle.setAttribute('class', 'section-title')
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
-    Tspan.textContent = "Financiera";
+    Tspan.textContent = data.consultoria[0].titulo;
     title.appendChild(Tspan)
-    for ( texto of data.consultoria.financiera.descripcion){
+    for ( texto of data.consultoria[0].contenido){
         let Tp= document.createElement("p");   
         Tp.textContent = texto;
         title.appendChild(Tp)
@@ -27,9 +27,9 @@ let cargarJson = () => {
     stitle2.setAttribute('class', 'section-title')
     let title2 = document.createElement("h3");
     let Tspan2 = document.createElement("span");
-    Tspan2.textContent = "Tributaria";
+    Tspan2.textContent = data.consultoria[1].titulo;
     title2.appendChild(Tspan2)
-    for ( texto2 of data.consultoria.tributaria.descripcion){
+    for ( texto2 of data.consultoria[1].contenido){
         let Tp= document.createElement("p");   
         Tp.textContent = texto2;
         title2.appendChild(Tp)
@@ -40,9 +40,9 @@ let cargarJson = () => {
     stitle3.setAttribute('class', 'section-title')
     let title3 = document.createElement("h3");
     let Tspan3 = document.createElement("span");
-    Tspan3.textContent = "Laboral";
+    Tspan3.textContent = data.consultoria[2].titulo;
     title3.appendChild(Tspan3)
-    for ( texto3 of data.consultoria.laboral.descripcion){
+    for ( texto3 of data.consultoria[2].contenido){
         let Tp= document.createElement("p");   
         Tp.textContent = texto3;
         title3.appendChild(Tp)

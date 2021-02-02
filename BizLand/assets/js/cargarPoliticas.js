@@ -14,46 +14,52 @@ let cargarJson = () => {
     sectiontitle.setAttribute('class', 'section-title');
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
-    Tspan.textContent = "Políticas Generales";
+    Tspan.textContent = data.politicas[0].titulo;
     title.appendChild(Tspan)
-    let pgenerales = document.createElement('p');
-    pgenerales.textContent = data.politicas.generales;
-    title.appendChild(pgenerales);
+	for ( cont1 of data.politicas[0].contenido) {
+		let pgenerales = document.createElement('p');
+		pgenerales.textContent = cont1;
+		title.appendChild(pgenerales);
+	}
     sectiontitle.appendChild(title);
 
     let sectiondepartamentales = document.createElement('div');
     sectiondepartamentales.setAttribute('class', 'section-title');
     let titledep = document.createElement('h3');
     let Tspandep = document.createElement("span");
-    Tspandep.textContent = "Políticas Departamentales";
+    Tspandep.textContent = data.politicas[1].titulo;
     titledep.appendChild(Tspandep);
-    let pdef = document.createElement('p');
-    pdef.textContent = data.politicas.departamentales.definicion;
+	for ( cont2 of data.politicas[1].contenido) {
+		let pdef = document.createElement('p');
+		pdef.textContent = cont2;
+		titledep.appendChild(pdef);
+	}
+	
     let listtitle = document.createElement('h3');
-    listtitle.textContent = "Tipos";
+    listtitle.textContent = data.politicas[2].titulo;
     let ul = document.createElement('ul');
-    for(tipo of data.politicas.departamentales.tipos){
+    for( tipo of data.politicas[2].contenido){
         let li = document.createElement("li");  
         li.textContent = tipo;
         ul.appendChild(li);
     }
     sectiondepartamentales.appendChild(titledep);
-    sectiondepartamentales.appendChild(pdef);
     let seccionlista = document.createElement('div');
     seccionlista.setAttribute('class', 'section-lista')
     seccionlista.appendChild(listtitle);
     seccionlista.appendChild(ul);
 
-
     let sectionespec = document.createElement('div');
     sectionespec.setAttribute('class', 'section-title');
     let titleespec = document.createElement("h3");
     let Tspanespec = document.createElement("span");
-    Tspanespec.textContent = "Políticas Específicas";
+    Tspanespec.textContent = data.politicas[3].titulo;
     titleespec.appendChild(Tspanespec)
-    let pespec = document.createElement('p');
-    pespec.textContent = data.politicas.especificas;
-    titleespec.appendChild(pespec);
+	for ( cont3 of data.politicas[1].contenido) {
+		let pespec = document.createElement('p');
+		pespec.textContent = cont3;
+		titleespec.appendChild(pespec);
+	}
     sectionespec.appendChild(titleespec);
 
     let contenedor = document.getElementsByClassName("contAudi")[0];

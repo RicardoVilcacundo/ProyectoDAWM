@@ -14,12 +14,12 @@ let cargarJson = () => {
     stitle.setAttribute('id', 'audiE')
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
-    Tspan.textContent = "Auditoria Externa";
+    Tspan.textContent = data.auditoria[0].titulo;
     title.appendChild(Tspan)
-    for ( texto of data.auditoria.externa.descripcion){
-    		let Tp= document.createElement("p");   
-    		Tp.textContent = texto;
-    		title.appendChild(Tp)
+    for ( texto of data.auditoria[0].contenido){
+    	let Tp= document.createElement("p");   
+    	Tp.textContent = texto;
+    	title.appendChild(Tp)
     }
     stitle.appendChild(title)   
 
@@ -27,13 +27,13 @@ let cargarJson = () => {
     clista.setAttribute('class', 'section-lista')
     let ctitle = document.createElement("h3");
     let Lspan = document.createElement("span");
-    Lspan.textContent = "Objetivos:";    
+    Lspan.textContent = data.auditoria[1].titulo;    
     ctitle.appendChild(Lspan)
     let ul = document.createElement("ul");
-    for ( texto2 of data.auditoria.externa.objetivos){
-    	     let li = document.createElement("li");  
-    		li.textContent = texto2;
-    		ul.appendChild(li)
+    for ( texto2 of data.auditoria[1].contenido){
+    	let li = document.createElement("li");  
+    	li.textContent = texto2;
+    	ul.appendChild(li)
     }
     clista.appendChild(ctitle)
     clista.appendChild(ul) 
@@ -44,12 +44,12 @@ let cargarJson = () => {
     stitle2.setAttribute('id', 'audiI')
     let title2 = document.createElement("h3");
     let Tspan2 = document.createElement("span");
-    Tspan2.textContent = "Auditoria Interna";
+    Tspan2.textContent = data.auditoria[2].titulo;
     title2.appendChild(Tspan2)
-    for ( texto of data.auditoria.interna.descripcion){
-    		let Tp= document.createElement("p");   
-    		Tp.textContent = texto;
-    		title2.appendChild(Tp)
+    for ( texto of data.auditoria[2].contenido){
+    	let Tp= document.createElement("p");   
+    	Tp.textContent = texto;
+    	title2.appendChild(Tp)
     }
     stitle2.appendChild(title2)   
 
@@ -57,13 +57,13 @@ let cargarJson = () => {
     clista2.setAttribute('class', 'section-lista')
     let ctitle2 = document.createElement("h3");
     let Lspan2 = document.createElement("span");
-    Lspan2.textContent = "Objetivos:";    
+    Lspan2.textContent = data.auditoria[3].titulo;    
     ctitle2.appendChild(Lspan2)
     let ul2 = document.createElement("ul");
-    for ( texto2 of data.auditoria.interna.objetivos){
-    	     let li = document.createElement("li");  
-    		li.textContent = texto2;
-    		ul2.appendChild(li)
+    for ( texto2 of data.auditoria[3].contenido){
+    	let li = document.createElement("li");  
+    	li.textContent = texto2;
+    	ul2.appendChild(li)
     }
     clista2.appendChild(ctitle2)
     clista2.appendChild(ul2) 
