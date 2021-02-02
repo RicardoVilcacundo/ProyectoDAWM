@@ -15,20 +15,19 @@ let cargarJson = () => {
 	primerDiv.setAttribute('class', 'section-title');
 	
 	let dtitulo = document.createElement("h2");
-	dtitulo.textContent = data.negociacion[0].titulo;
+	dtitulo.textContent = "Concierto y reestructuración de pasivos";
 	let dsubtitulo = document.createElement("h3");
 	let dspan = document.createElement("span");
-	dspan.textContent = data.negociacion[0].subtitulo;
+	dspan.textContent = "Reestructuración de Pasivos";
 	dsubtitulo.appendChild(dspan);
-	let parrafo1 = document.createElement("p");
-	let parrafo2 = document.createElement("p");
-	parrafo1.textContent = data.negociacion[0].descripcion1;
-	parrafo2.textContent = data.negociacion[0].descripcion2;
-	
-    primerDiv.appendChild(dtitulo);
+	primerDiv.appendChild(dtitulo);
 	primerDiv.appendChild(dsubtitulo);
-	primerDiv.appendChild(parrafo1);
-	primerDiv.appendChild(parrafo2);
+	
+	for ( desc1 of data.negociacion[0].contenido){
+		let parrafo1 = document.createElement("p");
+		parrafo1.textContent = desc1;
+		primerDiv.appendChild(parrafo1);
+	}
 	
 	
 	//--------------------Se llena el segundo div, el cual tendrá informacion y una lista de elementos---------------------
@@ -52,14 +51,17 @@ let cargarJson = () => {
 	segundoDivInterno.setAttribute('data-aos', 'fade-up');
 	segundoDivInterno.setAttribute('data-aos-delay', '100');
 	
-	//Creacion de imagen
-	let dinformacion = document.createElement("p");
-	dinformacion.setAttribute('class', 'font-italic');
-	dinformacion.textContent = data.negociacion[1].informacion;
+	//Creacion de parrafo
+	for ( desc2 of data.negociacion[1].contenido){
+		let dinformacion = document.createElement("p");
+		dinformacion.setAttribute('class', 'font-italic');
+		dinformacion.textContent = desc2;
+		segundoDivInterno.appendChild(dinformacion);
+	}
 	
 	//Creacion de lista
 	let dlista = document.createElement("ul");
-	for(let elemento of data.negociacion[1].lista){
+	for(let elemento of data.negociacion[2].contenido){
 		
 		let dli = document.createElement("li");
 		let di = document.createElement("i");
@@ -67,10 +69,8 @@ let cargarJson = () => {
 		let miniDiv = document.createElement("div");
 		let dsup = document.createElement("h5");
 		dsup.textContent = elemento.superior;
-		let dinf = document.createElement("p");
-		dinf.textContent = elemento.inferior;
 		miniDiv.appendChild(dsup);
-		miniDiv.appendChild(dinf);
+
 		
 		di.appendChild(miniDiv);
 		dli.appendChild(di);
@@ -78,7 +78,6 @@ let cargarJson = () => {
 	}
 	
 	//Agrego al segundo div interno
-	segundoDivInterno.appendChild(dinformacion);
 	segundoDivInterno.appendChild(dlista);
 	
 	//Agrego los divs internos al segundo div

@@ -14,7 +14,7 @@ let cargarJson = () => {
     sectiontitle.setAttribute('class', 'section-title');
     let title = document.createElement("h3");
     let Tspan = document.createElement("span");
-    Tspan.textContent = data.politicas[0].titulo;
+    Tspan.textContent = "Políticas " + data.politicas[0].titulo;
     title.appendChild(Tspan)
 	for ( cont1 of data.politicas[0].contenido) {
 		let pgenerales = document.createElement('p');
@@ -27,7 +27,7 @@ let cargarJson = () => {
     sectiondepartamentales.setAttribute('class', 'section-title');
     let titledep = document.createElement('h3');
     let Tspandep = document.createElement("span");
-    Tspandep.textContent = data.politicas[1].titulo;
+    Tspandep.textContent = "Políticas " + data.politicas[1].titulo;
     titledep.appendChild(Tspandep);
 	for ( cont2 of data.politicas[1].contenido) {
 		let pdef = document.createElement('p');
@@ -53,7 +53,7 @@ let cargarJson = () => {
     sectionespec.setAttribute('class', 'section-title');
     let titleespec = document.createElement("h3");
     let Tspanespec = document.createElement("span");
-    Tspanespec.textContent = data.politicas[3].titulo;
+    Tspanespec.textContent = "Políticas " + data.politicas[3].titulo;
     titleespec.appendChild(Tspanespec)
 	for ( cont3 of data.politicas[1].contenido) {
 		let pespec = document.createElement('p');
