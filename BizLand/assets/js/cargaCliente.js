@@ -103,7 +103,7 @@ let cargarJson = () => {
 	let listaresenas = document.getElementById("reviewsCheck");
 	var i = 0;
 	
-	for (let resena in data.perfil[1].resenas){
+	for (let resena of data.perfil[1].resenas){
 		
 		i++;
 		let divprincipalR = document.createElement("div");

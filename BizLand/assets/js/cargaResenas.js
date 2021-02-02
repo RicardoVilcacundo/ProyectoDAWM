@@ -62,6 +62,12 @@ function anadirResena(contenido) {
 	nuevaseleccion.textContent = nuevoid.toString();
 	comboboxr.appendChild(nuevaseleccion);
 	
+	//CAMBIA EL TOTAL DE RESEÑAS HECHAS POR EL USUARIO - AUMENTA EN 1
+	let resenashechas = document.getElementById("resenaescrita");
+	var arreglopalabras = resenashechas.textContent.split(" ");
+	var cantidadresenas = parseInt(arreglopalabras[0]);
+	cantidadresenas++;
+	resenashechas.textContent = cantidadresenas.toString() + " reseñas escritas"
 }
 
 
