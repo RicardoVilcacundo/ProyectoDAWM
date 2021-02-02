@@ -20,6 +20,7 @@ function editarResena(contenidotexto) {
 
 function anadirResena(contenido) {
 	
+	//AÑADE LA RESEÑA A LA LISTA DE RESEÑAS
 	let listaresenas = document.getElementsByClassName("parrafo");
 	let nuevoid = listaresenas.length + 1;
 	let contenedorresenas = document.getElementById("reviewsCheck");
@@ -52,7 +53,27 @@ function anadirResena(contenido) {
 	divprincipal.appendChild(segundodiv);
 	contenedorresenas.appendChild(divprincipal);
 	contenedorresenas.appendChild(separacion);
+	
+	//AÑADE UNA SELECCION MAS EN EL COMBOBOX DE EDITAR RESEÑA
+	let comboboxr = document.getElementById("resenas");
+	
+	let nuevaseleccion = document.createElement("option");
+	nuevaseleccion.setAttribute("value", nuevoid.toString());
+	nuevaseleccion.textContent = nuevoid.toString();
+	comboboxr.appendChild(nuevaseleccion);
+	
 }
+
+//FUNCION DE ESPERA HASTA QUE CARGUEN LOS DATOS
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+sleep(2000);
 
 //PARA MODIFICAR UNA RESEÑA
 document.getElementById("resenaeditada").addEventListener('input', function () {
