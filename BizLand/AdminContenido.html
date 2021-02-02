@@ -96,8 +96,10 @@
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div class="navbar__left">
-          <a href="#">Subscriptores</a>
-          <a class="active_link" href="#">Admin</a>
+          <a class="active_link" href="#">Consultar Servicio</a>
+          <a href="AdminContenidoAnadir.html">Anadir</a>
+          <a href="AdminContenidoEliminar.html">Eliminar</a>
+          <a href="AdminContenidoModificar.html">Modificar</a>
         </div>
         <div class="navbar__right">
           <a href="#">
@@ -127,12 +129,36 @@
           <!-- MAIN TITLE ENDS HERE -->
 
           <!-- SECCION MODIFICAR STARTS HERE -->
-          <div class="pseudobody">
-            <div class="contenedorAdministrarContenido"> <!--container-->
+          <div class="pseudobodyServ">
+            <div class="contenedorServicio"> <!--container-->
             
-            <header>Añade un Servicio</header>
+            <header>Selecciona un Servicio</header>
+
+            <div class="seleccionServ">
+              <p class="servicio">Servicio:</p>
+              <select id="selectServ">
+                <option value="">Seleccione un servicio</option>
+                <option>Servicio 1</option>
+                <option>Servicio 2</option>
+                <option>Servicio 3</option>
+              </select>
+            </div>
+
+            <div class="contenidoServ">
+              <div class="nombreServ">
+                <p class="labelNombre"><b>Nombre del Servicio:</b></p>
+                <p class="contenidoNombre">Servicio 1 [Ejemplo]</p>
+              </div>
+              <div class="descServ">
+                  <p class="labelDescripcion"><b>Descripcion:</b></p>
+                  <!--p class="contenidoDescripcion"></p-->
+                  <textarea readonly="true">
+                  	Loren Ipsum regerr rrrrrrrrrrrrrrr rrrrrrrrrrrrrrgrgwergrrrrrrr rrrrrrrrrrrrrrrrrrrrgwergwergewrgwergwegewrg wergwerfbwefbveuytfvberwuy fvweuyrfvjewrhfvbwjerhfvwejrhfvwejkrhvfwe rjhvfwjekrhvfkwejrhvfg
+                  </textarea>
+              </div>
+            </div>
             
-              <div class="progress-barra">
+              <!--div class="progress-barra">
                 <div class="step">
                   <p>Nombre</p>
                   <div class="bullet">
@@ -154,12 +180,14 @@
                   </div>
                   <div class="check fas fa-check"></div>
                 </div>
-              </div>
+              </div-->
            
 
-            <div class="form-outer">
+            <!--div class="form-outer">
 
-              <form action="#">
+              <div class="label">Seleccione el servicio a consultar</div>
+
+              <form action="#" id="anadirServicio">
 
                 <div class="page slide-page">
                   <div class="title">Informacion Basica:</div>
@@ -174,9 +202,10 @@
 
                 <div class="page slide-page">
                   <div class="title">Contenido Del Servicio:</div>
-                  <div class="field">
-                    <div class="label">Descripcion del Servicio</div>
+                  <div class="field" id="fieldText">
+                    <div class="label">Ingrese la Descripcion del Servicio</div>
                     <input type="text" name="" value="Descripcion">
+                    <textarea name="" form="anadirServicio">Descripcion del servicio aqui....</textarea>
                   </div>
                   <div class="field btns">
                     <button class="prev-1 prev">Anterior</button>
@@ -186,7 +215,7 @@
 
 
               </form>
-            </div>
+            </div-->
           </div>
           </div>
           

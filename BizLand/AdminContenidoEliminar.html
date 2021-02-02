@@ -96,7 +96,10 @@
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div class="navbar__left">
-          <a class="active_link" href="#">Boletin</a>
+          <a href="AdminContenido.html">Consultar Servicio</a>
+          <a href="AdminContenidoAnadir.html">Anadir</a>
+          <a class="active_link" href="#">Eliminar</a>
+          <a href="AdminContenidoModificar.html">Modificar</a>
         </div>
         <div class="navbar__right">
           <a href="#">
@@ -129,27 +132,20 @@
           <div class="pseudobody">
             <div class="contenedorAdministrarContenido"> <!--container-->
             
-            <header>Envia un Boletin</header>
+            <header>Elimina un Servicio</header>
             
               <div class="progress-barra">
                 <div class="step">
-                  <p>Asunto</p>
-                  <div class="bullet">
+                  <p>Selecciona</p>
+                  <div class="bullet numero">
                     <span>1</span>
                   </div>
                   <div class="check fas fa-check"></div>
                 </div>
                 <div class="step">
-                  <p>Contenido</p>
-                  <div class="bullet">
+                  <p>Elimina</p>
+                  <div class="bullet numero">
                     <span>2</span>
-                  </div>
-                  <div class="check fas fa-check"></div>
-                </div>
-                <div class="step">
-                  <p>Finalizar</p>
-                  <div class="bullet">
-                    <span>3</span>
                   </div>
                   <div class="check fas fa-check"></div>
                 </div>
@@ -158,44 +154,23 @@
 
             <div class="form-outer">
 
-              <form action="#">
+              <form action="#" id="anadirServicio">
 
                 <div class="page slide-page">
-                  <div class="title">Por favor, ingresa el asunto del correo</div>
+                  <!--div class="title">Informacion Basica:</div-->
                   <div class="field">
-                    <div class="label">Asunto</div>
-                    <input type="text" name="" value="Asunto">
+                    <div class="label">Servicio:</div>
+                    <select id="servAElim">
+                      <option value="">Seleccione un Servicio.</option>
+                      <option>Servicio 1</option>
+                      <option>Servicio 2</option>
+                      <option>Servicio 3</option>
+                    </select>
                   </div>
                   <div class="field">
-                    <button class="firstNext">Siguiente</button>
+                    <button class="submit">Eliminar</button>
                   </div>
                 </div>
-
-                <div class="page slide-page">
-                  <div class="title">Por favor, ingresa el contenido del correo:</div>
-                  <div class="field">
-                    <div class="label">Cuerpo</div>
-                    <input type="text" name="" value="Descripcion">
-                  </div>
-                  <div class="field btns">
-                    <button class="prev-1 prev">Anterior</button>
-                    <button class="next-1 next">Siguiente</button>
-                  </div>
-                </div>
-
-                <div class="page slide-page">
-                  <div class="title">Por favor, selecciona el archivo adjunto:</div>
-                  <div class="field">
-                    <div class="label">Archivo Adjunto</div>
-                    <input type="file" id="myFile" name="myFile">
-                  </div>
-                  <div class="field btns">
-                    <button class="prev-2 prev">Anterior</button>
-                    <button class="submit">Enviar Boletin</button>
-                  </div>
-                </div>
-
-
               </form>
             </div>
           </div>
@@ -229,17 +204,17 @@
             <i class="fa fa-user-secret" aria-hidden="true"></i>
             <a href="#">Administrar Usuarios</a>
           </div>
-          <div class="sidebar__link">
+          <div class="sidebar__link active_menu_link">
             <i class="fa fa-building-o"></i>
-            <a href="AdminContenido.html">Administrar Contenido</a>
+            <a href="#">Administrar Contenido</a>
           </div>
           <div class="sidebar__link">
             <i class="fa fa-wrench"></i>
             <a href="#">Reportes</a>
           </div>
-          <div class="sidebar__link active_menu_link">
+          <div class="sidebar__link">
             <i class="fa fa-archive"></i>
-            <a href="#">Boletin de Notificaciones</a>
+            <a href="AdminBoletin.html">Boletin de Notificaciones</a>
           </div>
           
         </div>
@@ -283,7 +258,7 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script src="script.js"></script>
 
-  <script src="assets/js/AdminFormBoletin.js"></script>
+  <script src="assets/js/AdminFormEliminar.js"></script>
 </body>
 
 </html>
