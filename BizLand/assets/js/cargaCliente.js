@@ -136,84 +136,55 @@ let cargarJson = () => {
 	//SE CARGARÁ LA SECCION DE EDITAR RESEÑA
 	let editarresena = document.getElementById("reviewsEdit");
 	
-	//Combobox
-	let divprincipalE1 = document.createElement("div");
-	divprincipalE1.setAttribute("class", "row");
-		
-	let primerdivE1 = document.createElement("div");
-	primerdivE1.setAttribute("class", "col-sm-3 col-md-2 col-5");
-	let etiquetaE1 = document.createElement("label");
-	etiquetaE1.setAttribute("style", "font-weight:bold;");
-	etiquetaE1.textContent = "Elegir reseña: "
-	primerdivE1.appendChild(etiquetaE1);
-		
-	let segundodivE1 = document.createElement("div");
-	segundodivE1.setAttribute("class", "col-md-8 col-6");
-	segundodivE1.setAttribute("id", "combobox");
+	let formularioR = document.createElement("form");
 	
-	let comboboxE1 = document.createElement("select");
-	comboboxE1.setAttribute("name", "resenas");
-	comboboxE1.setAttribute("id", "resenas");
+	let etiquetaER = document.createElement("label");
+	etiquetaER.setAttribute("class", "col-sm-3 col-md-2 col-5");
+	etiquetaER.setAttribute("style", "font-weight:bold;");
+	etiquetaER.textContent = "Elegir reseña: ";
+	formularioR.appendChild(etiquetaER);
 	
+	let comboboxER = document.createElement("select");
+	comboboxER.setAttribute("class", "col-md-8 col-6");
+	comboboxER.setAttribute("id", "resenas");
+	comboboxER.setAttribute("name", "resenas");
 	for(var k=0; k < longitudresena; k++){
 		let opcion = document.createElement("option");
 		opcion.setAttribute("value", (k+1).toString());
 		opcion.textContent = (k+1).toString();
-		comboboxE1.appendChild(opcion);
+		comboboxER.appendChild(opcion);
 	}
-
-	segundodivE1.appendChild(comboboxE1);
-
-	let separacionE1 = document.createElement("hr");
-		
-	divprincipalE1.appendChild(primerdivE1);
-	divprincipalE1.appendChild(segundodivE1);
-	editarresena.appendChild(divprincipalE1);
-	editarresena.appendChild(separacionE1);
+	formularioR.appendChild(comboboxER);
 	
+	let etiquetaTA = document.createElement("label");
+	etiquetaTA.setAttribute("class", "col-sm-3 col-md-2 col-5");
+	etiquetaTA.setAttribute("style", "font-weight:bold;");
+	etiquetaTA.textContent = "Escriba el texto actualizado: ";
+	formularioR.appendChild(etiquetaTA);
 	
-	//TextArea
-	let divprincipalE2 = document.createElement("div");
-	divprincipalE2.setAttribute("class", "row");
-		
-	let primerdivE2 = document.createElement("div");
-	primerdivE2.setAttribute("class", "col-sm-3 col-md-2 col-5");
-	let etiquetaE2 = document.createElement("label");
-	etiquetaE2.setAttribute("style", "font-weight:bold;");
-	etiquetaE2.textContent = "Escriba el texto actualizado: "
-	primerdivE2.appendChild(etiquetaE2);
-		
-	let segundodivE2 = document.createElement("div");
-	segundodivE2.setAttribute("class", "col-md-8 col-6");
-	segundodivE2.setAttribute("id", "textbox");
-	let areatexto = document.createElement("textarea");
-	areatexto.setAttribute("id", "resenaeditada");
-	areatexto.setAttribute("name", "resenaeditada");
-	areatexto.setAttribute("cols", "70");
-	segundodivE2.appendChild(areatexto);
-
-	let separacionE2 = document.createElement("hr");
-		
-	divprincipalE2.appendChild(primerdivE2);
-	divprincipalE2.appendChild(segundodivE2);
-	editarresena.appendChild(divprincipalE2);
-	editarresena.appendChild(separacionE2);
+	let areadetexto = document.createElement("textarea");
+	areadetexto.setAttribute("class", "col-md-8 col-6");
+	areadetexto.setAttribute("id", "resenaeditada");
+	areadetexto.setAttribute("name", "resenaeditada");
+	areadetexto.setAttribute("cols", "70");
+	formularioR.appendChild(areadetexto);
 	
-	//Button
-	let divprincipalE3 = document.createElement("div");
-	divprincipalE3.setAttribute("class", "row");
-		
-	let primerdivE3 = document.createElement("div");
-	primerdivE3.setAttribute("class", "col-sm-3 col-md-2 col-5");
-	let entradaboton = document.createElement("input");
-	entradaboton.setAttribute("type", "button");
-	entradaboton.setAttribute("class", "btn btn-secondary");
-	entradaboton.setAttribute("id", "btnUpdate");
-	entradaboton.setAttribute("value", "Actualizar Reseña");
-	primerdivE3.appendChild(entradaboton);
+	// DE SER ESTRICTAMENTE NECESARIO, ELIMINAR ESTE BLOQUE DE CODIGO Y USAR EL SIGUIENTE!!
+	let botonfinal = document.createElement("input");
+	botonfinal.setAttribute("id", "btnUpdate");
+	botonfinal.setAttribute("class", "btn btn-secondary");
+	botonfinal.setAttribute("type", "button");
+	botonfinal.setAttribute("value", "Actualizar Reseña");
+	formularioR.appendChild(botonfinal);
 	
-	divprincipalE3.appendChild(primerdivE3);
-	editarresena.appendChild(divprincipalE3);
+	//let botonfinal = document.createElement("input");
+	//botonfinal.setAttribute("id", "btnUpdate");
+	//botonfinal.setAttribute("class", "btn btn-secondary");
+	//botonfinal.setAttribute("type", "submit");
+	//botonfinal.setAttribute("value", "Actualizar Reseña");
+	//formularioR.appendChild(botonfinal);
+	
+	editarresena.appendChild(formularioR);
 	
    })
   .catch( (error) => {
