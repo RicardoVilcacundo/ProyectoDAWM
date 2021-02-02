@@ -68,7 +68,7 @@ let cargarJson = () => {
 		
 		let miniDiv = document.createElement("div");
 		let dsup = document.createElement("h5");
-		dsup.textContent = elemento.superior;
+		dsup.textContent = elemento;
 		miniDiv.appendChild(dsup);
 
 		
