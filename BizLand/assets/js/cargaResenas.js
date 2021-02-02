@@ -64,33 +64,27 @@ function anadirResena(contenido) {
 	
 }
 
-//FUNCION DE ESPERA HASTA QUE CARGUEN LOS DATOS
-function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
-
-sleep(2000);
 
 //PARA MODIFICAR UNA RESEÑA
-document.getElementById("resenaeditada").addEventListener('input', function () {
-    textoobtenido = this.value;
-});
+setTimeout(() => {
+	document.getElementById("resenaeditada").addEventListener('input', function () {
+		textoobtenido = this.value;
+}); }, 2000);
 
-document.getElementById("btnUpdate").addEventListener('click', function() {
-    editarResena(textoobtenido);
-	alert("¡Reseña modificada con éxito! No olvides revisar en la pestaña de 'Reseñas escritas'")
-});
+setTimeout(() => {
+	document.getElementById("btnUpdate").addEventListener('click', function() {
+		editarResena(textoobtenido);
+		alert("¡Reseña modificada con éxito! No olvides revisar en la pestaña de 'Reseñas escritas'")
+}); }, 2000);
 
 //PARA AÑADIR UNA RESEÑA
-document.getElementById("resenanueva").addEventListener('input', function () {
-    textonuevo = this.value;
-});
+setTimeout(() => {
+	document.getElementById("resenanueva").addEventListener('input', function () {
+		textonuevo = this.value;
+}); }, 2000);
 
-document.getElementById("btnAdd").addEventListener('click', function() {
-    anadirResena(textonuevo);
-	alert("¡Reseña creada con éxito! No olvides revisar en la pestaña de 'Reseñas escritas'")
-});
+setTimeout(() => {
+	document.getElementById("btnAdd").addEventListener('click', function() {
+		anadirResena(textonuevo);
+		alert("¡Reseña creada con éxito! No olvides revisar en la pestaña de 'Reseñas escritas'")
+}); }, 2000);

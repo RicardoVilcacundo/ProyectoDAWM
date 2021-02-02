@@ -121,7 +121,7 @@ let cargarJson = () => {
 		segundodivR.setAttribute("id", i.toString());
 		let parrafoR = document.createElement("p");
 		parrafoR.setAttribute("class", "parrafo");
-		parrafoR.textContent = resena.texto;
+		parrafoR.textContent = resena.parafo;
 		segundodivR.appendChild(parrafoR);
 
 		let separacionR = document.createElement("hr");
@@ -212,11 +212,8 @@ let cargarJson = () => {
 	entradaboton.setAttribute("value", "Actualizar Reseña");
 	primerdivE3.appendChild(entradaboton);
 	
-	let separacionE3 = document.createElement("hr");
-	
 	divprincipalE3.appendChild(primerdivE3);
 	editarresena.appendChild(divprincipalE3);
-	editarresena.appendChild(separacionE3);
 	
    })
   .catch( (error) => {
