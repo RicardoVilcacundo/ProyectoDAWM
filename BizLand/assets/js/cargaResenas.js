@@ -19,14 +19,40 @@ function editarResena(contenidotexto) {
 	let listaresenas = document.getElementsByClassName("parrafo");
 	let seleccion = document.getElementById("resenas").value;
 	
-	for(var i=0; i < listaresenas.length; i++) {
-		
-		if ((parseInt(seleccion)-1) == i){
+	if(listaresenas.length > 0){
+		for(var i=0; i < listaresenas.length; i++) {
 			
-			listaresenas[i].textContent = contenidotexto;
+			if ((parseInt(seleccion)-1) == i){
+				
+				listaresenas[i].textContent = contenidotexto;
+				
+			}
 			
 		}
+	}
+	
+}
+
+function eliminarResena() {
+	
+	let lasresenas = document.getElementsByClassName("parrafo");
+	let lacantidad = lasresenas.length;
+	if (lacantidad > 0){
+		var eltexto = "div" + lacantidad.toString();
+		let eldiv = document.getElementById(eltexto);
+		eldiv.remove();
 		
+		//QUITA LA ULTIMA OPCION EN EL COMBOBOX DE EDITAR RESEÑA
+		let comboboxr = document.getElementById("resenas");
+		
+		comboboxr.remove(comboboxr.length-1);
+		
+		//CAMBIA EL TOTAL DE RESEÑAS HECHAS POR EL USUARIO - DISMINUYE EN 1
+		let resenashechas = document.getElementById("resenaescrita");
+		var arreglopalabras = resenashechas.textContent.split(" ");
+		var cantidadresenas = parseInt(arreglopalabras[0]);
+		cantidadresenas--;
+		resenashechas.textContent = cantidadresenas.toString() + " reseñas escritas"
 	}
 	
 }
@@ -39,7 +65,8 @@ function anadirResena(contenido) {
 	let contenedorresenas = document.getElementById("reviewsCheck");
 	
 	let divprincipal = document.createElement("div");
-	divprincipal.setAttribute("class", "row");
+	divprincipal.setAttribute("class", "row")
+	divprincipal.setAttribute("id", ("div" + nuevoid.toString()));;
 	
 	//Llena el primer div que tiene un label
 	let primerdiv = document.createElement("div");
@@ -105,6 +132,12 @@ setTimeout(() => {
 	document.getElementById("btnUpdate").addEventListener('click', function() {
 		editarResena(textoobtenido);
 		alert("¡Reseña modificada con éxito! No olvides revisar en la pestaña de 'Reseñas escritas'")
+}); }, 2000);
+
+//PARA ELIMINAR UNA RESEÑA
+setTimeout(() => {
+	document.getElementById("btnReviewDelete").addEventListener('click', function() {
+		eliminarResena();
 }); }, 2000);
 
 //PARA AÑADIR UNA RESEÑA

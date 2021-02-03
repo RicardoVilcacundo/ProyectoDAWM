@@ -199,7 +199,7 @@
 									<div class="tab-pane fade" id="infoEdit" role="tabpanel" aria-labelledby="infoEdit-tab">
 										<!-- AQUI VA LA OPCION PARA EDITAR EL NOMBRE DEL USUARIO -->
 										<form class="row">
-											<label class="col-sm-3 col-md-2 col-5" style="font-weight:bold;">Nuevo usuario: </label>
+											<label class="col-sm-3 col-md-2 col-5" style="font-weight:bold;">Nuevo nombre: </label>
 											<input type="text" class="col-md-8 col-6" id="nuevonombre" name="nuevonombre"></input>
 											<label class="col-sm-3 col-md-2 col-5">Puede ser vacío</label>
 											
@@ -224,15 +224,22 @@
 									
                                     <div class="tab-pane fade" id="reviewsCheck" role="tabpanel" aria-labelledby="reviewsCheck-tab">
 										<!-- AQUI VA LA LISTA DE RESEÑAS DEL USUARIO -->
-                                        <div class="row">
+                                        <div class="row" id="div1">
 											<div class="col-sm-3 col-md-2 col-5">
 												<label style="font-weight:bold;">Reseña 1: </label>
 											</div>
-											<div class="col-md-8 col-6">
+											<div class="col-md-8 col-6" id="1">
 												<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi massa, venenatis non lacus eget, convallis vehicula tortor. Proin facilisis ante non ex accumsan, a imperdiet enim euismod. Quisque vestibulum arcu mollis est tempor, vitae faucibus turpis placerat. Proin ut pretium ante, vitae efficitur lacus. Fusce convallis a eros ut sodales. Proin facilisis mattis tellus a ullamcorper. Curabitur scelerisque lacus non orci rhoncus pellentesque. Nullam eu elit non ex aliquam bibendum eu semper arcu.Praesent arcu enim, sagittis eu quam ac, gravida imperdiet odio. Pellentesque vel turpis eu lorem porttitor iaculis.</p>
 											</div>
 											<hr></hr>
 										</div>
+										
+										<form class="row">
+											<label class="col-sm-3 col-md-2 col-5" style="font-weight:bold;">¿Eliminar reseña?</label>
+											<input type="button" class="btn btn-secondary" id="btnReviewDelete" value="Eliminar reseña" />
+											<!-- <input type="submit" class="btn btn-secondary" id="btnReviewDelete" value="Eliminar reseña" /> USARLO Y BORRAR LA LINEA ANTERIOR DE SER NECESARIO!!!-->
+										</form>
+										
                                     </div>
 									
 									
