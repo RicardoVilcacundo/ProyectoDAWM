@@ -1,6 +1,19 @@
 var textoobtenido; //Para modificar una reseña
 var textonuevo; //Para añadir una reseña nueva
 
+function editarUsuario() {
+	
+	let elinput = document.getElementById("nuevonombre").value;
+	let elnombre = document.getElementById("nombreusuario");
+	elnombre.textContent = elinput;
+}
+
+function editarImagen() {
+	
+	let laimagen = document.getElementById("imgProfile");
+	laimagen.setAttribute("src", "assets/img/login/user.png");
+}
+
 function editarResena(contenidotexto) {
 	
 	let listaresenas = document.getElementsByClassName("parrafo");
@@ -70,6 +83,17 @@ function anadirResena(contenido) {
 	resenashechas.textContent = cantidadresenas.toString() + " reseñas escritas"
 }
 
+//PARA EDITAR EL NOMBRE DEL USUARIO
+setTimeout(() => {
+	document.getElementById("btnClientUpdate").addEventListener('click', function() {
+		editarUsuario();
+}); }, 2000);
+
+//PARA BORRAR LA IMAGEN DE PERFIL
+setTimeout(() => {
+	document.getElementById("btnPhotoUpdate").addEventListener('click', function() {
+		editarImagen();
+}); }, 2000);
 
 //PARA MODIFICAR UNA RESEÑA
 setTimeout(() => {

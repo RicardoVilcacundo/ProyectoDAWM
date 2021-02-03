@@ -35,9 +35,13 @@ body{
 	opacity: 1;
 }
 
-#btnChangePicture, #btnUpdate, #btnAdd {
+#btnChangePicture, #btnUpdate, #btnAdd, #btnClientUpdate {
 	background-color: #4d94ff;
 }
+
+#btnPhotoUpdate {
+	background-color: #ff6666;
+} 
 
 p {
 	text-align: justify;
