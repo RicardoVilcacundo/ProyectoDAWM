@@ -1,22 +1,32 @@
 {
-    "negociacion": [{
-        "titulo": "Descripción",
-        "contenido": [
-			"Se realiza un estudio de la empresa y se elabora un plan de pago de acuerdo a los flujos proyectados que ésta tenga, tratando de disminuir siempre la carga financiera y optimizando el uso de las garantías.Posteriormente se negocia con los acreedores un plan de pago que considere los intereses de la empresa y de sus acreedores.",
-			"La reestructuración de pasivos es el cambio de un pasivo no favorable por otro más favorable. Reestructurar significa modificar la estructura, por ello no se cambia de tipo de financiamiento, sigue siendo pasivo.Lo que cambian son las condiciones del pasivo, es decir: El plazo, La tasa y las condiciones de pago."
-        ]},
+"negociacion":[
+	{
+	"titulo":"Concierto y reestructuración de pasivos",
+	"subtitulo":"Reestructuración de Pasivos",
+	"descripcion1":"Se realiza un estudio de la empresa y se elabora un plan de pago de acuerdo a los flujos proyectados que ésta tenga, tratando de disminuir siempre la carga financiera y optimizando el uso de las garantías.Posteriormente se negocia con los acreedores un plan de pago que considere los intereses de la empresa y de sus acreedores.",
+	"descripcion2":"La reestructuración de pasivos es el cambio de un pasivo no favorable por otro más favorable. Reestructurar significa modificar la estructura, por ello no se cambia de tipo de financiamiento, sigue siendo pasivo.Lo que cambian son las condiciones del pasivo, es decir: El plazo, La tasa y las condiciones de pago."
+	},
+	{
+	"informacion":"Hay diversos factores por los que es necesario realizar una reestructuracion de pasivos:",
+	"lista":[
 		{
-        "titulo": "Información adicional",
-        "contenido": [
-            "Hay diversos factores por los que es necesario realizar una reestructuracion de pasivos"
-        ]},
+		"superior":"Caída de las ventas",
+		"inferior":"Factor que implica realizar reestructuración de pasivos"
+		},
 		{
-        "titulo": "Factores",
-        "contenido": [
-			"Caída de las ventas",
-			"Incremento de los costos",
-			"Cambio en la economía del país",
-			"Incremento de las tasas de interés"			
-        ]}
-    ]
+		"superior":"Incremento de los costos",
+		"inferior":"Factor que implica realizar reestructuración de pasivos"
+		},
+		{
+		"superior":"Cambio en la economía del país",
+		"inferior":"Factor que implica realizar reestructuración de pasivos"
+		},
+		{
+		"superior":"Incremento de las tasas de interés",
+		"inferior":"Cuando el contrato del crédito se haya realizado con interés variable"
+		}
+	]
+	}
+]
 }
+	
